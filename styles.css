@@ -1,0 +1,131 @@
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas (tablets, móviles) */
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Estilos para pantallas grandes (laptops, escritorios) */
+    body {
+        font-size: 18px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: #001;
+    overflow: hidden;
+}
+.clip-path{
+    clip-path: polygon(100% 0, 100% 100%, 49% 100%, 65% 48%, 48% 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle,rgb(2, 236, 217) 30%,rgba(252, 70, 107, 1) 100%);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+
+}
+.navbar ul{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.navbar ul li:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 4px;
+    background: rgba(252, 70, 107, 1);
+    transition: 0.3s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 700;
+}
+.logo span {
+    color: rgba(252, 70, 107, 1);
+}
+.text {
+    color:#fff;
+    padding: 40px 80px;
+}
+.text h1 {
+    font-size: 60px;
+}
+.text span {
+    color: rgba(252, 70, 107, 1);
+}
+.btn {
+    background: radial-gradient(circle, rgb(26, 1, 19) 3%, rgba(252, 70, 107, 1) 100% );
+    padding: 20px 40px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: translateY(-5px);
+}
+.img {
+    position: absolute;
+    right: -35%;
+    top: 70px;
+}
+img {
+    width: 40%;
+}
+.img1 {
+    position: absolute;
+    right: -26%;
+    top: 150px;
+}
+img1 {
+    width: 30%;
+}
+.img2 {
+    position: absolute;
+    right: -15%;
+    top: 140px;
+}
+img2 {
+    width: 100%;
+}
+.bi{
+    font-size: 100px;
+    color: rgb(149, 13, 111);
+    margin-left: 20px;
+}
+.bi-facebook:hover{
+    color: #3b5998;
+}
+.bi-instagram:hover{
+    color:rgb(191, 102, 13)
+}
+.bi-whatsapp:hover{
+    color: #25d366;
+}
+
+
